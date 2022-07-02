@@ -1,0 +1,8 @@
+area_circunferencia
+celcius_fahrenheit
+fahrenheit_celcius
+atribuicao_concatenacao
+dobro_numero
+duracao_viagem
+valor_conta_garcom
+supermercado_promocao

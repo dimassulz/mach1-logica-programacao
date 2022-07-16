@@ -1,5 +1,5 @@
 /**
- * Suponha que o numero de coelhos de um criado quadriplica a cada ano após o primeiro ano
+ * Suponha que o numero de coelhos de um criador quadriplica a cada ano após o primeiro ano
  * Elaborar um programa que leia o numero inicial de coelhos e a quantidade de anos
  * O programa ira exibir ano a ano o numero medio previsto de coelhos.
  * Verificar inicialmente se os campos são numeros validos e o numero inicial tem que ser maior ou igual a 2

@@ -11,3 +11,25 @@
  * Ano 3: 160
  * Ano 4: 640
  */
+
+const prompt = require('prompt-sync')();
+
+console.log('#### PROGRAMA COELHOS ####');
+let numeroInicialCoelhos = Number(prompt('Número inicial coelhos: '));
+//validacao se e maior ou igual a 2 o numero inicial de coelhos
+if (isNaN(numeroInicialCoelhos) || numeroInicialCoelhos < 2) {
+    return console.log("Digite o numero de coelhos maior ou igual a 2"); 
+}
+
+const quantidadeAnos = Number(prompt('Quantidade anos: '));
+
+if (isNaN(quantidadeAnos)) {
+    return console.log("Digite o valor da quantidade de anos corretamente!");
+}
+
+const MULTIPLICADOR_COELHOS = 4; //constante do quadriplicar os coelhos
+
+for (let ano = 1; ano <= quantidadeAnos; ano++) { // itera a quantidade de anos
+    console.log(`Ano ${ano}: ${numeroInicialCoelhos}`);
+    numeroInicialCoelhos *= MULTIPLICADOR_COELHOS; // multiplicado para quadriplicar o numero de coelhos
+}

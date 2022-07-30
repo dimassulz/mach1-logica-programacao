@@ -15,3 +15,22 @@
  * 3 x 9 = 27
  * 3 x 10 = 30
  */
+
+const prompt = require('prompt-sync')();
+
+console.log('#### PROGRAMA TABUADA ####');
+let numeroTabuada = Number(prompt('Número informado: '));
+
+if (isNaN(numeroTabuada) || numeroTabuada < 1 || numeroTabuada > 100) {
+    return console.log("Insira um número inteiro entre 1 e 100");
+}
+
+if (!Number.isInteger(numeroTabuada)) {
+    return console.log("Insira um número inteiro");
+}
+
+const LIMITE_TABUADA = 10; 
+
+for (let numero = 1; numero <= LIMITE_TABUADA; numero++) { // itera os 10 itens da calculadora
+    console.log(`${numeroTabuada} x ${numero} = ${numeroTabuada*numero}`);
+}

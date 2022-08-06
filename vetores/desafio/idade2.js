@@ -6,3 +6,27 @@
  */
 
 const idades = [12, 20, 15, 17, 19];
+
+//USANDO O FOREACH
+idades.forEach(function (idade, indice) {
+    if (idade > 18) {
+        return console.log(`${indice} - ${idade}`);
+    }
+})
+
+//USANDO O FOR
+for (let i = 0; i <= idades.length; i++) {
+    if (idades[i] > 18) {
+        console.log(`${i} - ${idades[i]}`);
+    }
+}
+/**
+ let resultado = '';
+idades.forEach((idade, indice) => {
+    if (idade > 18) {
+        resultado += `${indice} - ${idade} \n`;
+    }
+});
+
+console.log(resultado)
+*/
